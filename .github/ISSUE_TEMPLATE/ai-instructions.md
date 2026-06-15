@@ -1,9 +1,11 @@
 ---
+
 name: '🤖 IA (AI Instructions)'
 about: Define instructions for agents, automation, or AI-related tools
 title: '[IA]: '
 labels: ''
 assignees: ''
+
 ---
 
 ## Purpose of the agent or instruction
