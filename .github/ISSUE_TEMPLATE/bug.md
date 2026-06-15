@@ -1,8 +1,12 @@
+---
+
 name: '🐞 Bug Report'
 about: Poetry not working the way it is documented?
 title: '[BUG]: '
 labels: ''
 assignees: ''
+
+---
 
 ## Description
  
