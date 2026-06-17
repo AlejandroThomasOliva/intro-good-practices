@@ -68,7 +68,8 @@ Install dependencies, including `dev` dependencies:
 poetry install --with=dev
 ```
 
-Install the `pre-commit` configuration
+Check the `pre-commit` configuration:
+
 ```powershell
-pre-commit install --hook-type commit-msg --hook-type pre-push
-```
+pre-commit validate-config
+pre-commit run
