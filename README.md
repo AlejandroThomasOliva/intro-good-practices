@@ -4,9 +4,9 @@ This repository is designed as a learning space where we will practice and apply
 
 ## Table of Contents
 
-- [Project Description](#project-description)
 - [Tool Set](#tool-set)
 - [Setting up a Virtual Environment](#setting-up-a-virtual-environment)
+- [Requirements](#Requirements)
 
 ## Tool Set
 
@@ -31,8 +31,9 @@ This project uses a local Python virtual environment to keep dependencies isolat
 
 First, make sure Python 3.13 is selected for this project:
 
-```powershell```
+```powershell
 pyenv local 3.13
 python -V # -> Validar que sea 3.13.x
 python -m venv .venv # -> Esto crea una carpeta en local que se llama .venv y es ignorada por el .gitignore
 .venv\Scripts\Activate.ps1 # -> Activa el ambiente virtual en windows. En Linux o MacOS es: source .venv/bin/activate
+```
