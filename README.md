@@ -1,6 +1,22 @@
 # intro-good-practices
 
-Este repositorio está diseñado como un espacio de aprendizaje donde vamos a practicar y aplicar buenas prácticas de desarrollo de software, incluyendo el uso de Git, GitHub, Issues, Pull Requests, documentación y trabajo colaborativo.
+This repository is designed as a learning space where we will practice and apply software development best practices, including the use of Git, GitHub, Issues, Pull Requests, documentation, and collaborative work.
+
+## Table of Contents
+
+- [Project Description](#project-description)
+- [Tool Set](#tool-set)
+- [Setting up a Virtual Environment](#setting-up-a-virtual-environment)
+
+## Tool Set
+
+The following external tools are used to initialize and manage the project:
+
+| Name | Version |
+| --- | --- |
+| Python | >= 3.13 |
+| Poetry | >= 2.4.1 |
+| pyenv | >= v2.7.2 |
 
 ## Setting up a Virtual Environment
 
@@ -8,14 +24,15 @@ This project uses a local Python virtual environment to keep dependencies isolat
 
 ## Requirements
 
--Python 3.13
--pyenv
+- Python >= 3.13
+- `pyenv`
 
 ### Create the virtual environment
 
 First, make sure Python 3.13 is selected for this project:
 
-```powershell
+```powershell```
 pyenv local 3.13
-python -V
-
+python -V # -> Validar que sea 3.13.x
+python -m venv .venv # -> Esto crea una carpeta en local que se llama .venv y es ignorada por el .gitignore
+.venv\Scripts\Activate.ps1 # -> Activa el ambiente virtual en windows. En Linux o MacOS es: source .venv/bin/activate
