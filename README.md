@@ -22,6 +22,9 @@ The following external tools are used to initialize and manage the project:
 
 This project uses a local Python virtual environment to keep dependencies isolated from the global system installation.
 
+> [!NOTE]
+> Please be sure that you have the tool set suggested already installed on your local.
+
 ## Requirements
 
 - Python >= 3.13
