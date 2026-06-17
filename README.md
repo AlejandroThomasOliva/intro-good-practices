@@ -33,7 +33,16 @@ First, make sure Python 3.13 is selected for this project:
 
 ```powershell
 pyenv local 3.13
-python -V # -> Validar que sea 3.13.x
-python -m venv .venv # -> Esto crea una carpeta en local que se llama .venv y es ignorada por el .gitignore
-.venv\Scripts\Activate.ps1 # -> Activa el ambiente virtual en windows. En Linux o MacOS es: source .venv/bin/activate
+```
+Validate that it is 3.13.x
+```powershell
+python -V
+```
+This creates a local folder called .venv, which is ignored by .gitignore
+```powershell
+python -m venv .venv
+```
+Activates the virtual environment on Windows.
+```powershell
+.venv\Scripts\Activate.ps1
 ```
