@@ -6,7 +6,6 @@ This repository is designed as a learning space where we will practice and apply
 
 - [Tool Set](#tool-set)
 - [Setting up a Virtual Environment](#setting-up-a-virtual-environment)
-- [Requirements](#Requirements)
 - [Create the virtual environment](#Create-the-virtual-environment)
 
 ## Tool Set
@@ -21,9 +20,6 @@ The following external tools are used to initialize and manage the project:
 
 ## Setting up a Virtual Environment
 
-This project uses a local Python virtual environment to keep dependencies isolated from the global system installation.
-
-> [!NOTE]
 This project uses a local Python virtual environment to keep dependencies isolated from the global system installation.
 
 > [!NOTE]
