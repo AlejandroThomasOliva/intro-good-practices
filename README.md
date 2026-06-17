@@ -37,15 +37,37 @@ First, make sure Python 3.13 is selected for this project:
 ```powershell
 pyenv local 3.13
 ```
+
 Validate that it is 3.13.x
+
 ```powershell
 python -V
 ```
+
 This creates a local folder called .venv, which is ignored by .gitignore
+
 ```powershell
 python -m venv .venv
 ```
+
 Activates the virtual environment on Windows.
+
 ```powershell
 .venv\Scripts\Activate.ps1
+```
+Install Poetry:
+
+```powershell
+pip install poetry
+```
+
+Install dependencies, including `dev` dependencies:
+
+```powershell
+poetry install --with=dev
+```
+
+Install the `pre-commit` configuration
+```powershell
+pre-commit install --hook-type commit-msg --hook-type pre-push
 ```
