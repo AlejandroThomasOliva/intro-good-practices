@@ -4,19 +4,21 @@ This repository is designed as a learning space where we will practice and apply
 
 ## Table of Contents
 
-- [Tool Set](#tool-set)
-- [Setting up a Virtual Environment](#setting-up-a-virtual-environment)
-- [Create the virtual environment](#Create-the-virtual-environment)
+- [intro-good-practices](#intro-good-practices)
+  - [Table of Contents](#table-of-contents)
+  - [Tool Set](#tool-set)
+  - [Setting up a Virtual Environment](#setting-up-a-virtual-environment)
+  - [Create the virtual environment](#create-the-virtual-environment)
 
 ## Tool Set
 
 The following external tools are used to initialize and manage the project:
 
-| Name | Version |
-| --- | --- |
-| Python | >= 3.13 |
-| Poetry | >= 2.4.1 |
-| pyenv | >= v2.7.2 |
+| Name   | Version   |
+| ------ | --------- |
+| Python | >= 3.13   |
+| Poetry | >= 2.4.1  |
+| pyenv  | >= v2.7.2 |
 
 ## Setting up a Virtual Environment
 
@@ -45,11 +47,12 @@ This creates a local folder called .venv, which is ignored by .gitignore
 python -m venv .venv
 ```
 
-Activates the virtual environment on Windows.
+Activates the virtual environment on Windows:
 
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
+
 Install Poetry:
 
 ```powershell
@@ -66,4 +69,9 @@ Check the `pre-commit` configuration:
 
 ```powershell
 pre-commit validate-config
+pre-commit install --hook-type commit-msg --hook-type pre-push
 pre-commit run
+```
+
+> [!NOTE]
+> Any hook type configured in `.pre-commit-config.yaml` must also be installed locally. Otherwise, the hook will not run automatically during the Git workflow.
