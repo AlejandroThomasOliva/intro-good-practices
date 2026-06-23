@@ -8,6 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "fastapi[standard] (>=0.137.2,<0.138.0)",
+    "certifi (>=2026.6.17,<2027.0.0)"
 ]
 license = {text = "Apache-2.0"}
 
