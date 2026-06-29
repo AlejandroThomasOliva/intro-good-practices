@@ -57,7 +57,6 @@ async def get_github_status() -> dict[str, Any]:
                     )
                 else:
                     raise HTTPException(
-                        status_code=502,
                         detail=(
                             f"GitHub Status API returned HTTP error "
                             f"{status_code}: {exc}"
